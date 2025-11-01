@@ -25,6 +25,7 @@ public enum TokenType {
     LESS_THAN,
     GREATER_THAN,
     NOT_EQUAL,
+    LESS_EQUAL, GREATER_EQUAL,
 
     //Delimiters
     LPAREN,
