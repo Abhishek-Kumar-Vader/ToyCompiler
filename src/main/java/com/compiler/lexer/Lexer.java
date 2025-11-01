@@ -128,22 +128,22 @@ public class Lexer {
     }
 
     private TokenType getSingleCharTokenType(char c) {
-        switch (c) {
-            case '+': return TokenType.PLUS;
-            case '-': return TokenType.MINUS;
-            case '*': return TokenType.STAR;
-            case '/': return TokenType.SLASH;
-            case '=': return TokenType.ASSIGN;
-            case '<': return TokenType.LESS_THAN;
-            case '>': return TokenType.GREATER_THAN;
-            case '(': return TokenType.LPAREN;
-            case ')': return TokenType.RPAREN;
-            case '{': return TokenType.LBRACE;
-            case '}': return TokenType.RBRACE;
-            case ';': return TokenType.SEMICOLON;
-            case ',': return TokenType.COMMA;
-            default: return null;
-        }
+        return switch (c) {
+            case '+' -> TokenType.PLUS;
+            case '-' -> TokenType.MINUS;
+            case '*' -> TokenType.STAR;
+            case '/' -> TokenType.SLASH;
+            case '=' -> TokenType.ASSIGN;
+            case '<' -> TokenType.LESS_THAN;
+            case '>' -> TokenType.GREATER_THAN;
+            case '(' -> TokenType.LPAREN;
+            case ')' -> TokenType.RPAREN;
+            case '{' -> TokenType.LBRACE;
+            case '}' -> TokenType.RBRACE;
+            case ';' -> TokenType.SEMICOLON;
+            case ',' -> TokenType.COMMA;
+            default -> null;
+        };
     }
 
     private void skipWhitespace() throws IOException {
