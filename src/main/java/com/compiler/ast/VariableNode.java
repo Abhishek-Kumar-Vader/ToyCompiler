@@ -4,11 +4,11 @@ import com.compiler.token.Token;
 
 public class VariableNode implements ExpressionNode{
     public final Token token;
-    public final int value;
+    public final String name;
 
-    public VariableNode(Token token, int value){
+    public VariableNode(Token token){
         this.token=token;
-        this.value=value;
+        this.name= token.getValue();
     }
 
     @Override

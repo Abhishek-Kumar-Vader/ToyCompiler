@@ -4,9 +4,9 @@ import com.compiler.token.Token;
 
 public class FloatLiteralNode implements ExpressionNode{
     public final Token token;
-    public final int value;
+    public final float value;
 
-    public FloatLiteralNode(Token token, int value){
+    public FloatLiteralNode(Token token, float value){
         this.token=token;
         this.value=value;
     }
