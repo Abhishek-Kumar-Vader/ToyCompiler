@@ -5,11 +5,11 @@ import com.compiler.token.Token;
 import java.util.List;
 
 public class FunctionCallNode implements ExpressionNode{
-    public final Token token;
+    public final Token functionName;
     public final List<ExpressionNode> arguments;
 
-    public FunctionCallNode(Token token, List<ExpressionNode> arguments){
-        this.token=token;
+    public FunctionCallNode(Token functionName, List<ExpressionNode> arguments){
+        this.functionName=functionName;
         this.arguments=arguments;
     }
 

@@ -2,6 +2,7 @@ package com.compiler.ast;
 
 public interface NodeVisitor<T> {
 
+    // Expressions
     T visitIntLiteralNode(IntLiteralNode node);
     T visitFloatLiteralNode(FloatLiteralNode node);
     T visitVariableNode(VariableNode node);
@@ -16,9 +17,9 @@ public interface NodeVisitor<T> {
     T visitWhileNode(WhileNode node);
     T visitReturnNode(ReturnNode node);
     T visitBlockNode(BlockNode node);
+    T visitExpressionStatementNode(ExpressionStatementNode node);
 
     // Declarations
     T visitFunctionDeclNode(FunctionDeclNode node);
     T visitProgramNode(ProgramNode node);
-
 }

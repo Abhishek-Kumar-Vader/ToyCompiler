@@ -3,7 +3,7 @@ package com.compiler.ast;
 import com.compiler.token.Token;
 import java.util.List;
 
-public class FunctionDeclNode implements Node {
+public class FunctionDeclNode implements StatementNode {
     public final Token functionName;
     public final List<Token> parameters;
     public final BlockNode body;
